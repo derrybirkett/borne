@@ -1,0 +1,17 @@
+nav.navbar.navbar-light.bg-faded
+  a.navbar-brand(href='#') Blog
+  ul.nav.navbar-nav.pull-xs-right
+    li.nav-item
+      a.nav-link(href='#') Dublin
+    li.nav-item
+      a.nav-link(href='#') Moscow
+    li.nav-item.active
+      a.nav-link(href='#') Barcelona  
+    li.nav-item
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#exCollapsingNavbar')
+          | &#x2630;         
+
+    //
+      form.form-inline
+        input.form-control(type='text', placeholder='Search')
+        button.btn.btn-success-outline(type='submit') Search

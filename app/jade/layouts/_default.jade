@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    title Borne
+    meta(charset='UTF-8')
+    meta(content='', name='description')
+    meta(content='', name='author')
+    meta(content='3 days', name='revisit-after')
+
+    // build:css /styles/main.css
+    link(href='/styles/main.css', rel='stylesheet')
+    link(href='/bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+  
+    // endbuild
+
+    script(src="//use.edgefonts.net/lato.js")
+
+  body(class=page)
+    .container
+      include ../partials/navbar.jade
+
+    block content
+
+    // Footer
+    footer
+
+    // build:js /scripts/main.js
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/jquery/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/scripts/main.js')
+    // endbuild
